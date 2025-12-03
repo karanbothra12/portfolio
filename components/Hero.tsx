@@ -19,7 +19,7 @@ export function Hero() {
         <div className="flex flex-col items-center justify-center space-y-8 text-center">
           <FadeIn viewport={false} className="space-y-4">
             <div className="inline-block rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 mb-4">
-              Available for Freelance & Full-time
+              ✦ Let's Build Something Great
             </div>
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Hi there, I'm <br className="hidden sm:inline" />
