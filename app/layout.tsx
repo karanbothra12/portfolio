@@ -23,14 +23,6 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://karanbothra.com",
     siteName: "Karan Bothra Portfolio",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Karan Bothra Portfolio",
-      },
-    ],
   },
 };
 
