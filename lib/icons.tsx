@@ -124,11 +124,9 @@ export function getTechIcon(
   }
 
   if (options?.className) {
-    return React.cloneElement(icon as React.ReactElement, {
-      className: cn(
-        (icon as React.ReactElement).props.className,
-        options.className
-      ),
+    const element = icon as React.ReactElement<{ className?: string }>;
+    return React.cloneElement(element, {
+      className: cn(element.props.className, options.className),
     });
   }
 
