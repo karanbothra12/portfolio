@@ -89,11 +89,16 @@ export const resume = {
   },
   projects: [
     {
-      title: "Personal Portfolio",
-      description:
-        "A clean, responsive portfolio website built with Next.js 15 and Tailwind CSS.",
-      tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      link: "#",
+      title: "Angara Ecommerce",
+      description: "Ecommerce Website",
+      tech: ["Next.js", "Tailwind CSS", "TypeScript", "React"],
+      link: "https://www.angara.com/",
+    },
+    {
+      title: "Portfolio Site for Vidita Mahesheka",
+      description: "Personal portfolio website for a UI/UX Designer.",
+      tech: ["Next.js", "Styled Components"],
+      link: "https://viditamahesheka.com/",
     },
     {
       title: "E-commerce Dashboard",
@@ -111,12 +116,12 @@ export const resume = {
     },
   ],
   services: [
-    {
+    /* {
       title: "App Development",
       description:
         "Crafting high-performance mobile experiences that feel native and look stunning. I build intuitive, scalable iOS and Android apps that keep users engaged and your business growing.",
       icons: ["React", "Flutter", "Swift"],
-    },
+    }, */
     {
       title: "Web Development",
       description:
@@ -141,11 +146,11 @@ export const resume = {
         "Streamlining the path from code to cloud. I implement automated CI/CD pipelines and manage resilient infrastructure to ensure your software is delivered faster and runs smoother.",
       icons: ["Docker", "AWS", "Git"],
     },
-    {
+    /* {
       title: "Database Architecture",
       description:
         "Organizing data for speed and scale. I optimize complex schemas and queries to ensure your information is always secure, consistent, and retrieved in milliseconds.",
       icons: ["MongoDB", "PostgreSQL", "Redis"],
-    },
+    }, */
   ],
 };

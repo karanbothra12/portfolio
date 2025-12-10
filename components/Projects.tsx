@@ -26,39 +26,46 @@ export function Projects() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {resume.projects.map((project, index) => (
             <FadeIn key={index} delay={index * 0.1}>
-              <Card className="flex h-full flex-col overflow-hidden border-gray-200 dark:border-gray-800 transition-all hover:shadow-lg hover:-translate-y-1 group">
-                <div className="h-48 bg-gray-100 dark:bg-gray-900 relative overflow-hidden">
-                  {/* Tech Stack Icons Display */}
-                  <div className="absolute inset-0 flex items-center justify-center gap-4 text-gray-400 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
-                    {project.tech.map((tech) => (
-                      <div key={tech} title={tech}>
-                        {getTechIcon(tech, { className: "h-8 w-8" }) ||
-                          getTechIcon(tech.split(" ")[0], {
-                            className: "h-8 w-8",
-                          })}
-                      </div>
-                    ))}
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
+                <Card className="flex h-full flex-col overflow-hidden border-gray-200 dark:border-gray-800 transition-all hover:shadow-lg hover:-translate-y-1 group">
+                  <div className="h-48 bg-gray-100 dark:bg-gray-900 relative overflow-hidden">
+                    {/* Tech Stack Icons Display */}
+                    <div className="absolute inset-0 flex items-center justify-center gap-4 text-gray-400 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                      {project.tech.map((tech) => (
+                        <div key={tech} title={tech}>
+                          {getTechIcon(tech, { className: "h-8 w-8" }) ||
+                            getTechIcon(tech.split(" ")[0], {
+                              className: "h-8 w-8",
+                            })}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60" />
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h3 className="text-white font-bold text-xl">
+                        {project.title}
+                      </h3>
+                    </div>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-white font-bold text-xl">
-                      {project.title}
-                    </h3>
-                  </div>
-                </div>
-                <CardContent className="flex-1 p-6">
-                  <p className="text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.tech.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+                  <CardContent className="flex-1 p-6">
+                    <p className="text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">
+                      {project.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mt-auto">
+                      {project.tech.map((tech) => (
+                        <Badge key={tech} variant="outline" className="text-xs">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </a>
             </FadeIn>
           ))}
         </div>

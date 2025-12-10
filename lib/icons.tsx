@@ -33,6 +33,7 @@ import {
   SiRedis,
   SiFramer,
   SiVuedotjs,
+  SiStyledcomponents,
 } from "react-icons/si";
 import { MdCode, MdLightbulb, MdGroups, MdAnalytics } from "react-icons/md";
 
@@ -96,6 +97,7 @@ export const techIcons: Record<string, React.ReactNode> = {
   // Other Frameworks
   "Framer Motion": <SiFramer className="h-8 w-8" />,
   "Vue.js": <SiVuedotjs className="text-[#4FC08D]" />,
+  "Styled Components": <SiStyledcomponents className="text-[#DB7093]" />,
 
   // Nontechnical (using generic icons)
   "Problem Solving": <MdLightbulb className="text-yellow-500" />,
